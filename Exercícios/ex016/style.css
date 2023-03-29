@@ -1,0 +1,27 @@
+@charset "UTF-8";
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+p {
+    text-align: justify;
+
+}
+body {
+    background-image: linear-gradient(to right, #012340, #027333);
+}
+main {
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #001324; /* o primeiro parâmetro é a largura, o segundo é o comprimento, o terceiro é o quanto a sombra de espalha, e o último é a cor */
+}
+h1 {
+    color: #025939;
+    text-align: center;
+    box-shadow: 5px 5px 10px #012e1d;
+}
+h2 {
+    color: #03A63C;
+}
