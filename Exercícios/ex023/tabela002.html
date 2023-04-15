@@ -6,16 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
         thead, tfoot {
             background-color: gray;
@@ -29,10 +44,11 @@
 <body>
     <h1>Uso de Tabelas Grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -56,10 +72,74 @@
                 <td>Bahia</td>
                 <td class="numero">14 016 906</td>
             </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">10 444 526</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 016 906</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">10 444 526</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 016 906</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">10 444 526</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 016 906</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">10 444 526</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 016 906</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero">210.147.125</td>
             </tr>
         </tfoot>
